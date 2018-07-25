@@ -1,0 +1,31 @@
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+/* The initial fade in once the website loads */
+div#FadeInitial {
+  display: none;
+}
+
+#Overlay {
+  position: fixed;
+  bottom: 0;
+  background-color: black;
+  opacity: .8;
+  right: 50%;
+  transform: translateX(50%);
+  width: 100%;
+}
+
+#SelectProject {
+  position: relative;
+  margin: auto;
+  width: 1080px;
+  padding-top: 12px;
+}

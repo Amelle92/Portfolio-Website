@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles -->
+    <link href="css/portfolio-item.css" rel="stylesheet">
+
+	  <!--Load Project-->
+	  <script src="js/LoadProject.js?random=<?php echo uniqid();?>"></script>
+
+    <!--Arrow Scripts-->
+	  <script src="js/ArrowController.js?random=<?php echo uniqid();?>"></script>
+
+
+  </head>
+  	<body id="body" onload="LoadProject(3)">
+
+    		<!-- Navigation -->
+    		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    			<div class="container">
+    				<a class="navbar-brand" href="#">Adam Melle's Portfolio</a>
+    				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    					<span class="navbar-toggler-icon"></span>
+    				</button>
+    				<div class="collapse navbar-collapse" id="navbarResponsive">
+    					<ul class="navbar-nav ml-auto">
+    							<li class="nav-item active">
+    								<a class="nav-link" href="#">My Work
+    									<span class="sr-only">(current)</span>
+    								</a>
+    							</li>
+    							<li class="nav-item">
+    								<a class="nav-link" href="resume.html">Resume</a>
+    							</li>
+    					</ul>
+    				</div>
+    			</div>
+    		</nav>
+
+    		<!-- Page Content -->
+      <div id="FadeInitial">
+    		<div class="container">
+
+    			<!-- Portfolio Item Heading -->
+    			<h1 class="my-4" id="ProjectName">Project Name</h1>
+
+    			<!-- Portfolio Item Row -->
+    			<div class="row" id="FadeAfter">
+
+    				<div class="col-md-8" id="ProjectImage">
+    				</div>
+
+    				<div class="col-md-4">
+    					<h3 class="my-3">Description</h3>
+    					<p id="ProjectDescription">Placeholder for description of the project</p>
+    					<h3 class="my-3">Details</h3>
+    					<div id="ProjectDetails">
+    						<ul>
+    							<li>Languages</li>
+    							<li>Class</li>
+    							<li>Libraries</li>
+    							<li>Source Code</li>
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+        </div>
+
+
+
+    			<!-- Related Projects Row -->
+          <div id="Overlay">
+      			<!--<h3 class="my-4">Other Projects</h3>-->
+            <div id="SelectProject">
+        			<div id="LeftArrow" style="display:inline-block; vertical-align:top; cursor:pointer; ">
+        				<img id="ScrollL" class="img-fluid" src="images/arrowleft.png" alt="" onmouseover="ArrowController(this, 1, 0)" onmouseout="ArrowController(this, 0, 0)"></a>
+        			</div>
+        			<div id="Scrwndw" class="container-fluid" style="width:80%; height:auto; overflow-x:hidden; overflow-y:hidden; display:inline-block; cursor:pointer;">
+        				<div class="row flex-row flex-nowrap">
+        					<div class="col-12 col-sm-6 col-md-4 col-lg-3" id="Refitem">
+        						<div class="card card-block">
+        							<a href="#"><img class="img-fluid" src="images/mapgeneratorthumbnail.png" alt="" onclick="LoadProject(1)"></a>
+        						</div>
+        					</div>
+        					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        						<div class="card card-block">
+        							<a href="#"><img class="img-fluid" src="images/zbufferthumbnail.png" alt="" onclick="LoadProject(2)"></a>
+        						</div>
+        					</div>
+        					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        						<div class="card card-block">
+        							<a href="#"><img class="img-fluid" src="images/photogallerythumbnail.png" alt="" onclick="LoadProject(3)"></a>
+        						</div>
+        					</div>
+        					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        						<div class="card card-block">
+        							<a href="#"><img class="img-fluid" src="images/carpaymentcalculatorthumbnail.png" alt="" onclick="LoadProject(4)"></a>
+        						</div>
+        					</div>
+        					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        						<div class="card card-block">
+        							<a href="#"><img class="img-fluid" src="images/LFSRthumbnail.png" alt="" onclick="LoadProject(5)"></a>
+        						</div>
+        					</div>
+        					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        						<div class="card card-block">
+        							<a href="#"><img class="img-fluid" src="images/Nbodythumbnail.png" alt="" onclick="LoadProject(6)"></a>
+        						</div>
+        					</div>
+        					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        						<div class="card card-block">
+        							<a href="#"><img class="img-fluid" src="images/recursivegraphicsthumbnail.png" onclick="LoadProject(7)"  alt=""></a>
+        						</div>
+        					</div>
+        					<div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        						<div class="card card-block">
+        							<a href="#"><img class="img-fluid" src="images/SVGthumbnail.png" alt="" onclick="LoadProject(8)"></a>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div id="RightArrow" style="display:inline-block; vertical-align:top; cursor:pointer;">
+        				<img id="ScrollR" class="img-fluid" src="images/arrowright.png" alt="" onmouseover="ArrowController(this, 1, 1)" onmouseout="ArrowController(this, 0, 1)"></a>
+        			</div>
+            </div>
+    		  </div>
+      </div>
+    		<!-- Bootstrap -->
+    		<script src="vendor/jquery/jquery.min.js"></script>
+    		<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    		<script>
+    			function Resize() {
+    				var ContainerWidth = $(".container").width();
+    				var SCRWNDWwidth = (ContainerWidth * .75)-30;
+    				ContainerWidth -= SCRWNDWwidth;
+    				ArrowWidth = (ContainerWidth/2)-36;
+    				//Set Scrwndw Width
+    				$("#Scrwndw").width(SCRWNDWwidth);
+    				$("#RightArrow").width(ArrowWidth);
+    				$("#LeftArrow").width(ArrowWidth);
+    			}
+    			$(window).resize(function() {
+    				Resize();
+    			});
+    			$("#body").ready(function() {
+    				Resize();
+    			});
+    			$("#ScrollR").click(function(){
+    				$('#ScrollR').css('pointer-events','none');
+    				$('#ScrollL').css('pointer-events','none');
+    				var Scrwndw = document.getElementById("Scrwndw");
+    				var ScrwndwWidth = $("#Scrwndw").width();
+    				var TileWidth = $("#Refitem").outerWidth();
+
+    				// Detect how many tiles are showing
+    				var NumTiles = Math.ceil(ScrwndwWidth / TileWidth);
+
+    				//Scrwndw.scrollLeft += TileWidth * NumTiles;
+
+    				$('#Scrwndw').animate( { scrollLeft: '+=' + (TileWidth * NumTiles) }, 500);
+
+    				$('#ScrollR').css('pointer-events','auto');
+    				$('#ScrollL').css('pointer-events','auto');
+    			});
+
+    			$("#ScrollL").click(function(){
+    				$('#ScrollR').css('pointer-events','none');
+    				$('#ScrollL').css('pointer-events','none');
+    				var Scrwndw = document.getElementById("Scrwndw");
+    				var ScrwndwWidth = $("#Scrwndw").width();
+    				var TileWidth = $("#Refitem").outerWidth();
+
+    				// Detect how many tiles are showing
+    				var NumTiles = Math.ceil(ScrwndwWidth / TileWidth);
+
+    				//Scrwndw.scrollLeft += TileWidth * NumTiles;
+
+    				$('#Scrwndw').animate( { scrollLeft: '-=' + (TileWidth * NumTiles) }, 500);
+    				$('#ScrollR').css('pointer-events','auto');
+    				$('#ScrollL').css('pointer-events','auto');
+    			});
+    		</script>
+        <!--Fade in-->
+        <script src="js/Fadein.js?random=<?php echo uniqid();?>"></script>
+        <script src="js/HeightOffset.js?random=<?php echo uniqid();?>"></script>
+    </body>
+</html>
